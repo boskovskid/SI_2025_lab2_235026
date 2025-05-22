@@ -42,21 +42,21 @@ public class SILab2Test {
         assertEquals(500.0, SILab2.checkCart(List.of(FFF), "1234567890123456"));
 
         Item TFF = new Item("Watermelon", 1, 350, 0.0);
-        assertEquals(320.0, SILab2.checkCart(List.of(TFF), "1234567890123456")); // 350 - 30
+        assertEquals(320.0, SILab2.checkCart(List.of(TFF), "1234567890123456"));
 
         Item FTF = new Item("Bread", 3, 90, 0.1);
         double expectedFTF = (90 * 0.9 * 3) - 30;
         assertEquals(expectedFTF, SILab2.checkCart(List.of(FTF), "1234567890123456"));
 
         Item FFT = new Item("Eggs", 20, 10, 0.0);
-        assertEquals(170.0, SILab2.checkCart(List.of(FFT), "1234567890123456")); // (200 - 30)
+        assertEquals(170.0, SILab2.checkCart(List.of(FFT), "1234567890123456"));
 
         Item TTF = new Item("Steak", 3, 400, 0.3);
         double expectedTTF = (400 * 0.7 * 3) - 30;
         assertEquals(expectedTTF, SILab2.checkCart(List.of(TTF), "1234567890123456"));
 
         Item TFT = new Item("Strawberry", 20, 400, 0.0);
-        assertEquals(7970.0, SILab2.checkCart(List.of(TFT), "1234567890123456")); // (8000 - 30)
+        assertEquals(7970.0, SILab2.checkCart(List.of(TFT), "1234567890123456"));
 
         Item FTT = new Item("Apple", 10, 250, 0.2);
         double expectedFTT = (250 * 0.8 * 10) - 30;
